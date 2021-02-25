@@ -1,0 +1,146 @@
+/* NOTE: EACH CAPITALIZED SECTION CAN BE SPLIT IN A PARTIAL WHEN SASS IN ADDED */
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
+html {
+  --font-h: "Poppins", sans-serif;
+  --font-p: "Open Sans", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+}
+
+/* COLORS */
+html {
+  --clr-black: #010013;
+  --clr-black-dim: #39393d;
+  --clr-white: #e7edff;
+  --clr-white-dim: #798f7b;
+}
+
+/* default is light theme for now */
+body {
+  --clr-txt: var(--clr-black);
+  --clr-txt-dim: var(--clr-black-dim);
+  --clr-bg: var(--clr-white);
+  --clr-bg-dim: var(--clr-white-dim);
+
+  --clr-1: #c073ff;
+  --clr-1-x: #ff73c0;
+
+  /* body color defaults */
+  --clr-gradient-1: linear-gradient(45deg, var(--clr-1), var(--clr-1-x));
+  transition: background 0.2s linear;
+  background: var(--clr-bg);
+}
+
+body.dark {
+  --clr-txt: var(--clr-white);
+  --clr-txt-dim: var(--clr-white-dim);
+  --clr-bg: var(--clr-black);
+  --clr-bg-dim: var(--clr-black-dim);
+
+  --clr-1: #8c00ff;
+  --clr-1-x: #ff008c;
+}
+
+* {
+  color: var(--clr-txt);
+}
+
+/* SIZES */
+html {
+  /* font sizes */
+  --size-h1: 2rem;
+  --size-h2: 1.8rem;
+  --size-h3: 1.6rem;
+  --size-h4: 1.4rem;
+  --size-h5: 1.3rem;
+  --size-h6: 1.2rem;
+  --size-p: 1.1rem;
+  --size-s: 0.8rem;
+
+  /* mobile horizontal padding */
+  --size-sides-mobile: 20px;
+  --size-sides: var(--size-sides-mobile);
+
+  /* desktop horizontal padding */
+  --size-sides-desktop: 90px;
+}
+@media only screen and (min-width: 600px) {
+  html {
+    --size-sides: var(--size-sides-desktop);
+  }
+}
+
+/* DEFAULT HTML TAG STYLING */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--font-h);
+  color: var(--clr-txt);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: var(--size-h1);
+}
+h2 {
+  font-size: var(--size-h2);
+  font-weight: 300;
+}
+h3 {
+  font-size: var(--size-h3);
+}
+h4 {
+  font-size: var(--size-h4);
+}
+h5 {
+  font-size: var(--size-h5);
+}
+h6 {
+  font-size: var(--size-h6);
+}
+
+p {
+  font-family: var(--font-p);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* UTILITIES */
+.text-gradient {
+  background: -webkit-linear-gradient(110deg, var(--clr-1), var(--clr-1-x));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--clr-1);
+}
+
+.contain {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 800px;
+}
