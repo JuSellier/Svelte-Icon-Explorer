@@ -1,4 +1,4 @@
 import { writable } from "svelte/store";
 
-const iconKeywords = writable([]);
-const searchInput = writable("");
+export const iconKeywords = writable([]);
+export const searchInput = writable("");

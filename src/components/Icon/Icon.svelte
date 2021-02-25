@@ -11,11 +11,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 40px 10px;
     border-radius: 15px;
+    transition: background 0.2s ease;
   }
   section.top:hover {
     background: var(--clr-1);
+  }
+  section.top:hover .icon-wrapper {
+    box-shadow: none;
   }
 
   .icon-wrapper {

@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from "svelte";
+  import { searchInput } from "../../stores/search";
 
   import Icon from "../Icon/Icon.svelte";
 
@@ -12,6 +12,16 @@
     console.log(icon);
     filteredIcons.push(icon);
   }
+
+  searchInput.subscribe((val) => {
+    const filtered = [];
+    for (const icon in icons) {
+      if (icon.toLowerCase().includes(val)) {
+        filtered.push(icon);
+      }
+    }
+    filteredIcons = filtered;
+  });
 </script>
 
 <style>
@@ -27,7 +37,9 @@
   }
 
   p {
+    margin-top: 1rem;
     text-align: center;
+    color: var(--txt-dim);
   }
 
   section {
@@ -35,7 +47,7 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    row-gap: 80px;
+    row-gap: 1rem;
     column-gap: 1rem;
   }
 </style>
@@ -45,7 +57,7 @@
   <p>{filteredIcons.length} icons found</p>
   <section>
     {#each filteredIcons as icon}
-      <Icon name={icon} Icon={icons[icon]} />
+      <Icon key={icon} name={icon} Icon={icons[icon]} />
     {:else}
       <div>No icons to show...</div>
     {/each}
