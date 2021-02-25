@@ -10,16 +10,22 @@
 
   function onFormSubmit(e) {
     e.preventDefault();
+    searchInput.set(inputValue);
   }
 </script>
 
 <style>
+  form {
+    display: flex;
+    align-items: stretch;
+    min-width: 100px;
+  }
   input {
     background: none;
     border: none;
     padding: 10px;
     width: 100%;
-    max-width: 15ch;
+    max-width: 200px;
   }
 </style>
 

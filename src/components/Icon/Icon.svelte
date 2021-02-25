@@ -16,24 +16,25 @@
     transition: background 0.2s ease;
   }
   section.top:hover {
-    background: var(--clr-1);
+    background: #80808020;
   }
   section.top:hover .icon-wrapper {
     box-shadow: none;
   }
 
   .icon-wrapper {
-    width: 50px;
-    height: 50px;
+    width: 2rem;
+    height: 2rem;
     box-shadow: 0 0 0 1px #808080;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     margin-bottom: 10px;
+    transition: box-shadow 0.3s linear;
   }
 </style>
 
 <section class="top">
   <div class="icon-wrapper">
-    <Icon />
+    <svelte:component this={Icon} />
   </div>
   <small>{name}</small>
 </section>

@@ -1,4 +1,6 @@
 <script>
+  import { searchInput } from "../../stores/search";
+
   import SearchBar from "../SearchBar/SearchBar.svelte";
 </script>
 
@@ -13,12 +15,15 @@
     padding: 10px var(--size-sides);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid var(--clr-txt);
+  }
+
+  a {
+    width: 100%;
   }
 </style>
 
 <header>
-  <a href=".">ClearSearchOnClick</a>
+  <a href="." on:click={() => searchInput.set('')}>Svelte Icon Explorer</a>
   <SearchBar />
 </header>

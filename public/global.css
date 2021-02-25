@@ -11,6 +11,7 @@ html {
 
 /* COLORS */
 html {
+  --clr-black-darkest: #030303;
   --clr-black: #010013;
   --clr-black-dim: #39393d;
   --clr-white: #e7edff;
@@ -129,6 +130,13 @@ button:disabled {
   cursor: not-allowed;
 }
 
+code {
+  font-family: var(--font-mono);
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--clr-black-darkest);
+}
+
 /* UTILITIES */
 .text-gradient {
   background: -webkit-linear-gradient(110deg, var(--clr-1), var(--clr-1-x));
@@ -142,5 +150,5 @@ button:disabled {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
 }
