@@ -26,6 +26,10 @@
     top: 1rem;
   }
 
+  p {
+    text-align: center;
+  }
+
   section {
     padding: 2rem;
 
@@ -38,6 +42,7 @@
 
 <div class="top">
   <h5>{name}</h5>
+  <p>{filteredIcons.length} icons found</p>
   <section>
     {#each filteredIcons as icon}
       <Icon name={icon} Icon={icons[icon]} />
