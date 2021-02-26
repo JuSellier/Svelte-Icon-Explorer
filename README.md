@@ -1,5 +1,7 @@
 # Svelte Icons Explorer
 
+Live app: svelteicons.dev
+
 ## Features
 
 - [x] Search through all available icon libraries
