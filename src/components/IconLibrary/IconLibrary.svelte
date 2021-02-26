@@ -15,7 +15,7 @@
   searchInput.subscribe((val) => {
     const filtered = [];
     for (const icon in icons) {
-      if (icon.toLowerCase().includes(val)) {
+      if (icon.toLowerCase().includes(val.toLowerCase())) {
         filtered.push(icon);
       }
     }
