@@ -44,12 +44,12 @@
 		
 		<IconLibrary name="Dev Icons" icons={{ ...di }} />
 		<IconLibrary name="Font Awesome" icons={{ ...fa }} />
+		<!-- <IconLibrary name="Game Icons" icons={{ ...gi }} /> -->
 		<IconLibrary name="GitHub Octicons" icons={{ ...go }} />
 		<IconLibrary name="Ionicons" icons={{ ...io }} />
 		<IconLibrary name="Material Design" icons={{ ...md }} />
 		<IconLibrary name="Typicons" icons={{ ...ti }} />
 		<IconLibrary name="Weather Icons" icons={{ ...wi }} />
-		<!-- <IconLibrary name="Game Icons" icons={{ ...gi }} /> -->
 	</div>
 
 	{#if $searchInput.length > 0}

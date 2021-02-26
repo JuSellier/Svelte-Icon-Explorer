@@ -80,17 +80,16 @@
   }
 </style>
 
+{#if filteredIcons.length > 0}
 <div class="top">
   <h5>{name}</h5>
   <p>{filteredIcons.length > 0 ? filteredIcons.length : 'No'} icons found</p>
 
   {#if !expanded}
-    <button class="contain" on:click={() => (expanded = true)}>Explore
-      {name}
-    </button>
+    <button class="contain" on:click={() => (expanded = true)}>Explore </button>
   {/if}
   {#if expanded}
-    <button class="contain" on:click={() => (expanded = false)}>Minify</button>
+    <button class="contain" on:click={() => (expanded = false)}>Hide</button>
     <section class="wrapper">
       {#each filteredIcons as icon}
         <Icon name={icon} Icon={icons[icon]} />
@@ -100,3 +99,4 @@
     </section>
   {/if}
 </div>
+{/if}
