@@ -38,7 +38,7 @@
 
   h5 {
     position: sticky;
-    top: 1rem;
+    top: 5px;
     text-align: center;
     z-index: 200;
     pointer-events: none;
@@ -87,7 +87,7 @@
   {#if !expanded}
     <button class="contain" on:click={() => (expanded = true)}>Explore
       {name}
-      icons...</button>
+    </button>
   {/if}
   {#if expanded}
     <button class="contain" on:click={() => (expanded = false)}>Minify</button>

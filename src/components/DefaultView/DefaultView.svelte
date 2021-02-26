@@ -21,6 +21,13 @@
     flex-direction: column;
     row-gap: 1rem;
   }
+
+  h1 {
+    color: var(--clr-svelte-red);
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    font-family: var(--font-p);
+  }
 </style>
 
 <div class="intro contain">

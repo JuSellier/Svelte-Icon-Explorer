@@ -22,10 +22,23 @@
 
   a {
     width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .app-header-img {
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
   }
 </style>
 
 <header>
-  <a href="." on:click={() => searchInput.set('')}>Svelte Icon Explorer</a>
+  <a href="." on:click={() => searchInput.set('')}>
+    <img
+      class="app-header-img"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/638px-Svelte_Logo.svg.png"
+      alt="svelte icon" />
+    Svelte Icon Explorer</a>
   <SearchBar />
 </header>

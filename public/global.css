@@ -27,9 +27,9 @@ body {
 
   --clr-1: #c073ff;
   --clr-1-x: #ff73c0;
-  --clr-2: #ff3e00;
 
   /* body color defaults */
+  --clr-svelte-red: #ff3e00;
   --clr-gradient-1: linear-gradient(45deg, var(--clr-1), var(--clr-1-x));
   transition: background 0.2s linear;
   background: var(--clr-bg);
@@ -43,7 +43,6 @@ body.dark {
 
   --clr-1: #8c00ff;
   --clr-1-x: #ff008c;
-  --clr-2: #ff3e00;
 }
 
 * {
