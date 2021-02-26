@@ -30,6 +30,10 @@
     margin-bottom: 10px;
     transition: box-shadow 0.3s linear;
   }
+
+  small {
+    color: var(--clr-txt-dim);
+  }
 </style>
 
 <section class="top">

@@ -1,12 +1,12 @@
 /* NOTE: EACH CAPITALIZED SECTION CAN BE SPLIT IN A PARTIAL WHEN SASS IN ADDED */
 
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 
 html {
-  --font-h: "Poppins", sans-serif;
-  --font-p: "Open Sans", sans-serif;
-  --font-mono: "Roboto Mono", monospace;
+  --font-h: "Raleway", sans-serif;
+  --font-p: "Montserrat", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 /* COLORS */
@@ -15,7 +15,7 @@ html {
   --clr-black: #010013;
   --clr-black-dim: #39393d;
   --clr-white: #e7edff;
-  --clr-white-dim: #798f7b;
+  --clr-white-dim: #aba5b1;
 }
 
 /* default is light theme for now */
@@ -135,6 +135,9 @@ code {
   padding: 20px;
   border-radius: 5px;
   background: var(--clr-black-darkest);
+  color: var(--clr-white-dim);
+  box-shadow: 0 0 0 1px #80808050, inset -5px -5px 10px #ffffff20,
+    inset 5px 5px 3px #000000, -5px -5px 10px #ffffff20, 5px 5px 3px #000000;
 }
 
 /* UTILITIES */

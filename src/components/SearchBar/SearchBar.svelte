@@ -1,12 +1,6 @@
 <script>
   import { searchInput } from "../../stores/search";
-
-  function onInputChange(e) {
-    const inputValue = e.target.value;
-    searchInput.set(inputValue);
-  }
-
-  function onKeyDown(e) {}
+  let inputValue;
 
   function onFormSubmit(e) {
     e.preventDefault();
@@ -19,13 +13,18 @@
     display: flex;
     align-items: stretch;
     min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px var(--clr-bg-dim);
   }
   input {
     background: none;
     border: none;
     padding: 10px;
-    width: 100%;
-    max-width: 200px;
+    min-width: 100%;
+  }
+
+  button {
+    padding: 10px;
   }
 </style>
 
@@ -33,6 +32,6 @@
   <input
     type="text"
     placeholder="Explore svelte-icons..."
-    on:change={onInputChange} />
-  <button type="submit">search</button>
+    bind:value={inputValue} />
 </form>
+<button type="submit" on:click={onFormSubmit}>search</button>

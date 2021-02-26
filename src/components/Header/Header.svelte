@@ -11,11 +11,13 @@
     left: 0;
     width: 100%;
 
+    z-index: 100;
+
     background: var(--clr-bg);
     padding: 10px var(--size-sides);
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--clr-txt);
+    border-bottom: 1px solid #80808030;
   }
 
   a {
