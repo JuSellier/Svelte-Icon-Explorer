@@ -9,9 +9,11 @@
 	import * as io from "svelte-icons/io/index";
 	import * as md from "svelte-icons/md/index";
 	import * as ti from "svelte-icons/ti/index";
-	import * as wi from "svelte-icons/wi/index";
-	// GiJetpack is causing error: "(plugin svelte) ParseError: </IconBase> attempted to close an element that was not open"
+	// import * as wi from "svelte-icons/wi/index";
 	// import * as gi from "svelte-icons/gi/index";
+	// GiJetpack is causing error: "(plugin svelte) ParseError: </IconBase> attempted to close an element that was not open"
+// 	16:24:22.058  	[!] Error: Could not load /vercel/workpath0/node_modules/svelte-icons/wi/WiSmoke.svelte (imported by node_modules/svelte-icons/wi/index.js): EMFILE: too many open files, open '/vercel/workpath0/node_modules/svelte-icons/wi/WiSmoke.svelte'
+// 16:24:22.058  	Error: Could not load /vercel/workpath0/node_modules/svelte-icons/wi/WiSmoke.svelte (imported by node_modules/svelte-icons/wi/index.js): EMFILE: too many open files, open '/vercel/workpath0/node_modules/svelte-icons/wi/WiSmoke.svelte'
 
 	import { searchInput } from "./stores/search";
 	import DefaultView from "./components/DefaultView/DefaultView.svelte";
@@ -51,7 +53,7 @@
 		<IconLibrary name="Ionicons" icons={{ ...io }} />
 		<IconLibrary name="Material Design" icons={{ ...md }} />
 		<IconLibrary name="Typicons" icons={{ ...ti }} />
-		<IconLibrary name="Weather Icons" icons={{ ...wi }} />
+		<!-- <IconLibrary name="Weather Icons" icons={{ ...wi }} /> -->
 	</div>
 </main>
 
