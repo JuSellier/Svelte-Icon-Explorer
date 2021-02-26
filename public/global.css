@@ -27,6 +27,7 @@ body {
 
   --clr-1: #c073ff;
   --clr-1-x: #ff73c0;
+  --clr-2: #ff3e00;
 
   /* body color defaults */
   --clr-gradient-1: linear-gradient(45deg, var(--clr-1), var(--clr-1-x));
@@ -42,6 +43,7 @@ body.dark {
 
   --clr-1: #8c00ff;
   --clr-1-x: #ff008c;
+  --clr-2: #ff3e00;
 }
 
 * {
@@ -137,7 +139,7 @@ code {
   background: var(--clr-black-darkest);
   color: var(--clr-white-dim);
   box-shadow: 0 0 0 1px #80808050, inset -5px -5px 10px #ffffff20,
-    inset 5px 5px 3px #000000, -5px -5px 10px #ffffff20, 5px 5px 3px #000000;
+    inset 5px 5px 3px #000000f0, -5px -5px 10px #ffffff20, 5px 5px 3px #000000f0;
 }
 
 /* UTILITIES */

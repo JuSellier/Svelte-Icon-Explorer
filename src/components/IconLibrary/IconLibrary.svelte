@@ -20,8 +20,7 @@
       }
     }
     filteredIcons = filtered;
-    console.log(filtered.length);
-    if (val.length > 0) {
+    if (val.length > 0 && filtered.length < 100) {
       expanded = true;
     } else {
       expanded = false;
@@ -31,7 +30,7 @@
 
 <style>
   div.top {
-    border-top: 1px solid #808080;
+    border-top: 1px solid #80808030;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -64,19 +63,20 @@
     padding: 10px 20px;
     margin-bottom: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 0 1px var(--clr-bg-dim), 0 0 10px #00000020;
+    box-shadow: 0 0 0 1px #80808020, 0 0 10px #00000020;
 
     background: var(--clr-bg);
-    position: sticky;
-    top: 5rem;
-    left: 0;
+    transition: background 0.3s linear;
+  }
+  button:hover {
+    background: #80808020;
   }
 
   .wrapper {
     overflow-y: scroll;
     max-height: 100vh;
     border-radius: 4px;
-    box-shadow: inset 0 0 0 1px var(--clr-txt-dim);
+    box-shadow: inset 0 0 0 1px #80808020;
   }
 </style>
 
