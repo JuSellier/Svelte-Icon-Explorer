@@ -25,6 +25,10 @@
 <footer>
   <nav class="contain" aria-label="external links">
     <a
+      href="https://www.npmjs.com/package/svelte-icons"
+      rel="noreferrer"
+      target="_blank">Svelte Icons</a>
+    <a
       href="https://github.com/JuSellier/Svelte-Icon-Explorer"
       rel="noreferrer"
       target="_blank">Project GitHub Repo</a>

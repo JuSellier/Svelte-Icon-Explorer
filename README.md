@@ -5,8 +5,8 @@ Live app: svelteicons.dev
 ## Features
 
 - [x] Search through all available icon libraries
-- [ ] Click on Icon to copy its name to clipboard
 - [x] Installation Guide
+- [ ] Click on Icon to copy its name to clipboard
 - [ ] Icon Styling Guide
 - [ ] Variable Icon Size
 - [ ] Good Practices
@@ -19,7 +19,7 @@ Live app: svelteicons.dev
 
 ## Issues & Potential Limitations
 
-- BUILD TIMES ARE SLOW AF 💩 (due to grouped icon imports, there's probably better ways to handle that...)
+- BUILD TIMES ARE SLOW... 💩 (due to grouped icon imports, there's probably better ways to handle that...)
 - Performance & Optimization for rendering many icons (maybe use intersection observer || button to "load more icons"...)
-- Game Icons: GiJetPack is causing parsing errors
+- Game Icons: GiJetPack is causing parsing errors / WiSmoke (build error with Vercel deployment) for Weather Icons
 - Many icons lead to an error: `Error: <path> attribute d: Expected moveto path command ('M' or 'm'), "undefined".`
