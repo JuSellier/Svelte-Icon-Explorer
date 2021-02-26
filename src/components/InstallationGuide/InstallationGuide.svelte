@@ -3,9 +3,6 @@
     font-weight: 200;
     margin-top: 1rem;
   }
-
-  code {
-  }
 </style>
 
 <h3>NPM</h3>

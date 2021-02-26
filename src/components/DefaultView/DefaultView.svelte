@@ -1,5 +1,6 @@
 <script>
   import InstallationGuide from "../InstallationGuide/InstallationGuide.svelte";
+  import StylingGuide from "../StylingGuide/StylingGuide.svelte";
 </script>
 
 <style>
@@ -12,7 +13,6 @@
     padding: 1rem 20px 1.5rem;
   }
   p {
-    max-width: 50ch;
     color: var(--clr-txt-dim);
   }
 
@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    padding: 2rem 0;
   }
 
   h1 {
@@ -28,19 +29,33 @@
     letter-spacing: 0.2rem;
     font-family: var(--font-p);
   }
+
+  div.style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem 0;
+  }
 </style>
 
 <div class="intro contain">
   <h1>Svelte Icons</h1>
   <p>
     Include popular icons (from well known icon libraries like Font Awesome) in
-    your project easily.<br />
+    your project easily.
+    <br />
+    <br />
     Svelte Icon uses ES6 Imports so you can include only the icons that your
     project needs.
   </p>
 </div>
 
-<div class="install">
+<div class="install contain">
   <h2>Installation guide</h2>
   <InstallationGuide />
+</div>
+
+<div class="style contain">
+  <h2>Styling guide</h2>
+  <StylingGuide />
 </div>

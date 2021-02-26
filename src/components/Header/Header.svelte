@@ -17,11 +17,11 @@
     padding: 10px var(--size-sides);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #80808030;
   }
 
   a {
-    width: 100%;
     display: flex;
     align-items: center;
   }

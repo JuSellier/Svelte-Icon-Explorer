@@ -5,6 +5,7 @@
   function onFormSubmit(e) {
     e.preventDefault();
     searchInput.set(inputValue);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 </script>
 
@@ -25,6 +26,7 @@
 
   button {
     padding: 10px;
+    text-transform: uppercase;
   }
 </style>
 
@@ -33,5 +35,5 @@
     type="text"
     placeholder="Explore svelte-icons..."
     bind:value={inputValue} />
+  <button type="submit" on:click={onFormSubmit}>search</button>
 </form>
-<button type="submit" on:click={onFormSubmit}>search</button>

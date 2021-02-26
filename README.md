@@ -17,6 +17,7 @@
 
 ## Issues & Potential Limitations
 
+- BUILD TIMES ARE SLOW AF 💩 (due to grouped icon imports, there's probably better ways to handle that...)
 - Performance & Optimization for rendering many icons (maybe use intersection observer || button to "load more icons"...)
 - Game Icons: GiJetPack is causing parsing errors
 - Many icons lead to an error: `Error: <path> attribute d: Expected moveto path command ('M' or 'm'), "undefined".`

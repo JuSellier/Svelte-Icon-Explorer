@@ -1,6 +1,8 @@
 <script>
 	import Header from "./components/Header/Header.svelte";
+	import Footer from "./components/Footer/Footer.svelte";
 	import IconLibrary from "./components/IconLibrary/IconLibrary.svelte";
+
 	import * as di from "svelte-icons/di/index";
 	import * as fa from "svelte-icons/fa/index";
 	import * as go from "svelte-icons/go/index";
@@ -10,6 +12,7 @@
 	import * as wi from "svelte-icons/wi/index";
 	// GiJetpack is causing error: "(plugin svelte) ParseError: </IconBase> attempted to close an element that was not open"
 	// import * as gi from "svelte-icons/gi/index";
+
 	import { searchInput } from "./stores/search";
 	import DefaultView from "./components/DefaultView/DefaultView.svelte";
 
@@ -37,11 +40,10 @@
 		<DefaultView />
 	{/if}
 	{#if input.length > 0}
-		<h1>Showing results for: "{input}"</h1>
+		<h1 class="contain">Showing results for: {input}</h1>
 	{/if}
 
 	<div>
-		
 		<IconLibrary name="Dev Icons" icons={{ ...di }} />
 		<IconLibrary name="Font Awesome" icons={{ ...fa }} />
 		<!-- <IconLibrary name="Game Icons" icons={{ ...gi }} /> -->
@@ -51,10 +53,6 @@
 		<IconLibrary name="Typicons" icons={{ ...ti }} />
 		<IconLibrary name="Weather Icons" icons={{ ...wi }} />
 	</div>
-
-	{#if $searchInput.length > 0}
-		<div class="contain">
-			<h3>Styling guide</h3>
-		</div>
-	{/if}
 </main>
+
+<Footer />
