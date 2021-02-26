@@ -31,7 +31,7 @@
     <a
       href="https://twitter.com/SellierJu"
       rel="noreferrer"
-      target="_blank">Feedback & Issues</a>
+      target="_blank">Quick Feedback</a>
 
     <a href="https://jusellier.com" rel="noreferrer" target="_blank">Made by
       JuSellier</a>
