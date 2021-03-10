@@ -30,10 +30,12 @@
   }
 </style>
 
-<form on:submit={onFormSubmit}>
-  <input
-    type="text"
-    placeholder="Explore svelte-icons..."
-    bind:value={inputValue} />
-  <button type="submit" on:click={onFormSubmit}>search</button>
-</form>
+<div>
+  <form on:submit={onFormSubmit}>
+    <input
+      type="text"
+      placeholder="Explore svelte-icons..."
+      bind:value={inputValue} />
+    <button type="submit" on:click={onFormSubmit}>search</button>
+  </form>
+</div>
