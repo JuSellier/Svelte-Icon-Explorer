@@ -11,7 +11,8 @@
 
 <style>
   form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: stretch;
     min-width: 100px;
     border-radius: 5px;
